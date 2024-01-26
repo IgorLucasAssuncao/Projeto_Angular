@@ -1,21 +1,24 @@
 import { NgModule } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
+
+
 
 import { AppComponent } from './app.component';
 
 // @NgModule é um decorador que define um módulo Angular
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
-
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgModule,
+    HttpClient
   ],
-
   providers: [],
 
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 /**
  * módulo principal da aplicação
