@@ -8,10 +8,11 @@ import { FormsModule } from '@angular/forms';
 //Componentes
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 // @NgModule é um decorador que define um módulo Angular
 @NgModule({
-  declarations: [AppComponent, ServerComponent],
+  declarations: [AppComponent, ServerComponent, ServersComponent],
   imports: [BrowserModule, HttpClientModule, FormsModule],
   providers: [],
 
